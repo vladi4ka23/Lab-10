@@ -60,3 +60,20 @@ body {
   #generate:hover {
     background-color: #218838;
   }
+
+  /* Анімація для виграшу */
+@keyframes win-animation {
+    0%, 100% {
+      transform: scale(1);
+      background-color: #ffffff;
+    }
+    50% {
+      transform: scale(1.1);
+      background-color: #ffea00;
+    }
+  }
+  
+  .slot.win {
+    animation: win-animation 0.5s infinite;
+  }
+  
